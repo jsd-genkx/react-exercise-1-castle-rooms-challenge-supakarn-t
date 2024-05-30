@@ -11,7 +11,7 @@ const SecretRoom = ({ message1, onReply }) => {
 		setReply(event.target.value);
 	};
 
-	// why can't use only onReply(reply);
+	// why can't use only onReply(reply) -> onReply(reply) = call func , onReply = func expression
 	const sendReply = () => {
 		onReply(reply);
 	};
